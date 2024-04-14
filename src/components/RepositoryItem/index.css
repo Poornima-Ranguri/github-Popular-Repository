@@ -1,31 +1,62 @@
-.item-container {
-  margin: 27px;
+.repository-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  flex-basis: 100%;
+  background-color: #f8f8ff;
+  border-radius: 24px;
+  height: 300px;
+  margin-bottom: 24px;
+  padding: 24px;
 }
 
-.avatar-url {
-  height: 30%;
-  width: 25%;
+@media (min-width: 576px) {
+  .repository-item {
+    flex-basis: 45%;
+    margin-left: 16px;
+  }
 }
 
-.stars-container {
-  display: flex;
-  justify-content: space-between;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 992px) {
+  .repository-item {
+    flex-basis: 30%;
+  }
 }
 
-.star-image {
-  height: 25%;
-  width: 25%;
-  margin-right: 6px;
+@media (min-width: 1200px) {
+  .repository-item {
+    flex-basis: 23%;
+  }
 }
 
-.heading-item {
+.repository-image {
+  width: 92px;
+  height: 92px;
+}
+
+.repository-name {
   color: #e73959;
   font-family: 'Roboto';
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.stats-container {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin-bottom: 16px;
+}
+
+.stats-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+.stats-text {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 0px;
 }
