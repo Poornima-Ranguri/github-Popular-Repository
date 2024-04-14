@@ -4,7 +4,6 @@ import Loader from 'react-loader-spinner'
 import LanguageFilterItem from '../LanguageFilterItem'
 import RepositoryItem from '../RepositoryItem'
 import './index.css'
-import {receiveMessageOnPort} from 'worker_threads'
 
 const languageFiltersData = [
   {id: 'ALL', language: 'All'},
@@ -97,16 +96,11 @@ class GithubPopularRepos extends Component {
 
     switch (apiStatus) {
       case apiStatusConstants.success:
-        this.renderRepositoryItem()
-
-        break
+        return this.renderRepositoryItem()
       case apiStatusConstants.failure:
-        this.renderFailureView()
-        break
+        return this.renderFailureView()
       case apiStatusConstants.inProgress:
-        this.renderLoader()
-        break
-
+        return this.renderLoader()
       default:
         return null
     }
