@@ -1,0 +1,11 @@
+.btn-element {
+  color: #0f172a;
+  font-family: 'Roboto';
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+}

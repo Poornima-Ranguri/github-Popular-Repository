@@ -1,0 +1,31 @@
+.item-container {
+  margin: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-url {
+  height: 30%;
+  width: 25%;
+}
+
+.stars-container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-image {
+  height: 25%;
+  width: 25%;
+  margin-right: 6px;
+}
+
+.heading-item {
+  color: #e73959;
+  font-family: 'Roboto';
+  font-size: 30px;
+}
